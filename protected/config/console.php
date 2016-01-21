@@ -13,7 +13,7 @@ return array(
 	'components'=>array(
 
 		// database settings are configured in database.php
-		'db'=>require(dirname(__FILE__).'/database.php'),
+		'db'=>require(dirname(__FILE__).'/database_test.php'),
 
 		'log'=>array(
 			'class'=>'CLogRouter',
@@ -24,6 +24,12 @@ return array(
 				),
 			),
 		),
-
+		
+		// TO LOAD ALL THE FIXTURES TOGETHER
+		'commandMap' => array(
+		    'fixture' => array(
+		    	'class'=>'application.extensions.fixtureHelper.FixtureHelperCommand',
+		    ),
+		),
 	),
 );
