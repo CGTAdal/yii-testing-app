@@ -1,0 +1,65 @@
+
+To install phpunit:
+
+wget https://phar.phpunit.de/phpunit.phar
+chmod +x phpunit.phar
+
+https://jtreminio.com/2013/03/unit-testing-tutorial-introduction-to-phpunit/
+
+
+http://docs.seleniumhq.org/projects/remote-control/
+https://phpunit.de/
+
+Composer.json:
+{
+    "name": "yii-testing",
+    "description": "Just to implement automated testing with yii",
+    "keywords": ["yii", "framework", "testing"],
+    "homepage": "http://localhost/yii-testing/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+        "phpunit/phpunit-selenium": ">=1.2",
+        "phpunit/php-invoker": "*",
+        "phpunit/dbunit": ">=1.2",
+        "phpunit/phpunit-story": "*"
+    }
+}
+composer install
+composer update
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Execute unit test cases:
+
+../../vendor/bin/phpunit --coverage-html ./report unit
+
+------------------------------------------------------------------------------------------------------------------------------------
+=> Xdebug is required for coverage anything with testing
+
+sudo apt-get install php5-xdebug
+sudo vim /etc/php5/apache2/php.ini 
+
+# Added for xdebug
+zend_extension="/usr/lib/php5/20100525/xdebug.so"
+xdebug.remote_enable=1
+xdebug.remote_handler=dbgp xdebug.remote_mode=req
+xdebug.remote_host=127.0.0.1 xdebug.remote_port=9000
+
+sudo service apache2 restart
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Use full option with php unit:
+
+1. --coverage-html <dir> : Generate code coverage report in HTML format
+2. --disallow-todo-tests : Disallow @todo-annotated tests.
+3. --colors : To show the color in output
+4. --stop-on-error : Stop execution upon first error.
+5. --stop-on-failure : Stop execution upon first error or failure.
+6. --verbose Output more verbose information, for instance the names of tests that were incomplete or have been skipped.
+7. --debug Output debug information such as the name of a test when its execution starts.
+8. --bootstrap A "bootstrap" PHP file that is run before the tests.
+9. --configuration, -c Read configuration from XML file. See Appendix C, The XML Configuration File for more details. If phpunit.xml or phpunit.xml.dist (in that order) exist in the current working directory and --configura-tion is not used, the configuration will be automatically read from that file.
+10. --no-configuration Ignore phpunit.xml and phpunit.xml.dist from the current working directory.
