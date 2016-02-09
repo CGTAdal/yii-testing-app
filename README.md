@@ -30,6 +30,7 @@ We have some usefull references:
 
 * [Yii Reference] - Yii framwork official site to demonstrate configuration!
 * [phpunit selenium] - phpunit selenium sample code.
+* [phpunit] - phpunit tutorial.
 
 
 ### Todos
@@ -49,5 +50,6 @@ MIT
 
    [Yii reference]: <http://www.yiiframework.com/doc/guide/1.1/en/test.overview>
    [phpunit selenium]: <http://apigen.juzna.cz/doc/sebastianbergmann/phpunit-selenium/package-PHPUnit.Selenium.html>
+   [phpunit]: <https://phpunit.de/manual/4.8/en/index.html>
 
 
