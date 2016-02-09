@@ -5,8 +5,6 @@ yii-testing-app integration for unit and functional automation testing.
 To install all the dependencies and test the unit and functional test case follow these commands:
 To install all dependencies:
   - composer install
-  - See HTML in the right
-  - Magic
 
 To run the unit test:
   - cd protected/tests
