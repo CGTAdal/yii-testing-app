@@ -7,12 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     $vendorDir . '/phpunit/phpunit-story',
-    $vendorDir . '/phpunit/phpunit-mock-objects',
-    $vendorDir . '/phpunit/php-token-stream',
-    $vendorDir . '/phpunit/php-code-coverage',
-    $vendorDir . '/phpunit/phpunit',
-    $vendorDir . '/symfony/yaml',
     $vendorDir . '/phpunit/phpunit-selenium',
-    $vendorDir . '/phpunit/dbunit',
-    $vendorDir . '/symfony/yaml',
 );

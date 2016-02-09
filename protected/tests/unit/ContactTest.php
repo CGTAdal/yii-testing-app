@@ -12,7 +12,14 @@ class ContactTest extends CDbTestCase
         // $contact = $this->contacts('simple_contact_1');
         // your code....
     }
-    
+
+    /**
+    * @test
+    */
+    public function testHomePage(){
+        // $this->dispatch('/');
+        // $this->assertController('home');
+    }
 
     /**
     * @test

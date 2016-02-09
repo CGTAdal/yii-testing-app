@@ -2,6 +2,7 @@
 
 class SiteController extends Controller
 {
+	protected $internalVal = 50;
 	/**
 	 * Declares class-based actions.
 	 */
@@ -105,5 +106,13 @@ class SiteController extends Controller
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
+	}
+
+	public function doSomeCalculation($compareval=0){
+		if($compareval > $this->internalVal){
+			return false;
+		}else{
+			return true;
+		}
 	}
 }

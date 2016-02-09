@@ -191,7 +191,7 @@ class Contact extends CActiveRecord
 		parent::afterSave();
 	}*/
 
-	 public function behaviors(){
+	public function behaviors(){
 		return array(
 			'CTimestampBehavior' => array(
 				'class' => 'zii.behaviors.CTimestampBehavior',
@@ -201,4 +201,16 @@ class Contact extends CActiveRecord
 			)
 		);
 	}
-}
+
+	public function getCalculation($val=0){
+		return $this->doSomeCalculation($val);
+	}
+
+	private function doSomeCalculation($compareval=0){
+		if($compareval > 50){
+			return false;
+		}else{
+			return true;
+		}
+	}
+}	
