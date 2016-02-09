@@ -7,6 +7,12 @@
 /protected/runtime/*
 !/protected/runtime/.keep
 
+/protected/tests/report/*
+!/protected/tests/report/.keep
+
+/protected/tests/screenshots/*
+!/protected/tests/screenshots/.keep
+
 /vendor/*
 
 /.project
