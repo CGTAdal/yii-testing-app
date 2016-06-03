@@ -10,7 +10,7 @@ To run the unit test:
   - cd protected/tests
   - ../../vendor/bin/phpunit unit
  
-To run the functiona test:
+To run the functional test:
   - cd selenium
   - java -jar selenium-server-standalone-2.49.0.jar
   - Open another tab in terminal
@@ -28,7 +28,7 @@ To Generate coverage report for unit test cases:
 
 We have some usefull references:
 
-* [Yii Reference] - Yii framwork official site to demonstrate configuration!
+* [Yii Reference] - Yii framework official site to demonstrate configuration!
 * [phpunit selenium] - phpunit selenium sample code.
 * [phpunit] - phpunit tutorial.
 
